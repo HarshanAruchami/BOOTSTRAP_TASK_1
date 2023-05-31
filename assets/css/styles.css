@@ -1,0 +1,13 @@
+/* Banner Css */
+#banner{
+    width: 100vw;
+    z-index: 0;
+}
+#banner-content{
+    z-index: 1;
+    margin-top: -220px;
+}
+
+#nav-font-size{
+    font-size: 13px;
+}

@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <mrta charset="UTF-8" />
+    <mrta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <mrta namr="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOOTSTRAP-4</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Linking Bootstrap File -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <script src="./assets/js/bootstrap.bundle.js"></script>
 </head>
+
 <body>
-    
+    <!-- Banner -->
+    <div class="container-fluid p-0">
+        <img src="./assets/images/banner.png" class="img-resposive img-fluid" alt="banner" id="banner" />
+    </div>
+    <!-- Banner Content -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-8 ml-4" id="banner-content">
+                <h3 class="font-weight-bold text-light">EXCEEDING EXPECTATIONS & GAINING TRUST</h3>
+                <h3 class="text-light font-weight-normal">THROUGH EXCEPTIONAL SERVICE & PERFORMANCE</h3>
+                <span class="text-light">
+                    Leader in providing value-added Electrical services to our customers by creating a successful
+                    partnership throughout the design, and commissioning process.
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div class="container">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-top bg-transparent" id="nav">
+                <div class="col-4 col-md-4 col-lg-5 col-xl-4 p-0">
+                    <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 float-none float-lg-right " href="#">
+                        <img src="assets/images/Logo.svg" class="img-fluid" width="185px" alt="logo" />
+                    </a>
+                </div>
+                <!-- toggle button -->
+                <button class="navbar-toggler mr-3 col-md-1 text-dark bg-info" id="toggle-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar clickables -->
+                <div class="col-7 p-0" id="nav-bar-cont">
+                    <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 mr-5">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="nav-font-size" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="nav-font-size" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="nav-font-size" href="#">ELECTRICAL COMPLIANCES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="nav-font-size" href="#">SECTORS WE WORK IN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="nav-font-size" href="#">ABOUT</a>
+                            </li>
+                            <!-- Navbar button -->
+                            <li class="nav-item ml-1">
+                                <button class="border-0 mt-2 text-light ps-3 pe-3 btn-info " id="nav-font-size"
+                                    type="submit">
+                                    ENQUIRE NOW
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
 </body>
+
 </html>
