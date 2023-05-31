@@ -1,14 +1,16 @@
 /* Banner Css */
-#banner{
+/* layout 1 */
+#banner {
     width: 100vw;
     z-index: 0;
 }
-#banner-content{
+
+#banner-content {
     z-index: 1;
     margin-top: -220px;
 }
 
-#nav-font-size{
+#nav-font-size {
     font-size: 13px;
 }
 
@@ -18,13 +20,126 @@
     transition: background-color 200ms linear;
 }
 
+/* layout 3 Css */
+.map-txt {
+    font-size: smaller;
+}
+
+/* layout 4 Css */
+.card-border-size {
+    width: 270px;
+    height: 330px;
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    /* Hide overflowed image */
+}
+
+/* Background vector Image Styles*/
+.crop-image {
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+    margin-top: -340px;
+    margin-right: -20px;
+}
+
+.crop-image img {
+    position: relative;
+    right: -24%;
+    top: 0;
+    width: 100%;
+    height: 54%;
+    transform: translateY(100%);
+    /* Adjust the percentage value to crop the desired amount from the bottom */
+}
+
 /* layout 5 Css */
-#banner-2{
+#banner-2 {
     width: 100vw;
     z-index: 0;
 }
-#banner-content-2{
+
+#banner-content-2 {
     z-index: 1;
     margin-top: -550px;
 }
 
+/* layout 7 */
+#banner-3 {
+    width: 100vw;
+}
+
+/* croped the background image */
+.crop-bg-image {
+    overflow: hidden;
+}
+
+.crop-bg-image img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 667px;
+    /* Adjust this value to control the cropped height */
+}
+
+/* double quotes on the top left large */
+.double-quote-circle {
+    position: relative;
+    padding: 40px;
+}
+
+.double-quote-circle::before {
+    content: '"';
+    position: absolute;
+    top: -60px;
+    left: 1px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(25, 148, 197);
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* double quotes on the top left small */
+.double-quote-circle-small {
+    position: relative;
+    padding: 40px;
+}
+
+.double-quote-circle-small::before {
+    content: '"';
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(25, 148, 197);
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#testimonial {
+    z-index: 0;
+
+}
+
+#test_1{
+    z-index: 1;
+    margin-top: -280px;
+    margin-left: 500px;
+}
