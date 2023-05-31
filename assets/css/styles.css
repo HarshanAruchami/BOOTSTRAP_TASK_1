@@ -11,3 +11,20 @@
 #nav-font-size{
     font-size: 13px;
 }
+
+/* navbar scrolldown */
+.navbar-fixed-top.scrolled {
+    background-color: #464646 !important;
+    transition: background-color 200ms linear;
+}
+
+/* layout 5 Css */
+#banner-2{
+    width: 100vw;
+    z-index: 0;
+}
+#banner-content-2{
+    z-index: 1;
+    margin-top: -550px;
+}
+

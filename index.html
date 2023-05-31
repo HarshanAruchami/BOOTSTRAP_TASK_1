@@ -11,6 +11,12 @@
     <!-- Linking Bootstrap File -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    <!-- Linking Script File -->
+    <script type="js" src="./assets/js/index.js"></script>
+    <!-- jquery cdns -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 </head>
 
 <body>
@@ -20,24 +26,32 @@
     </div>
     <!-- Banner Content -->
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-8 ml-4" id="banner-content">
+        <div class="row justify-content-center justify-content-xl-end">
+            <div class="col-9 col-xl-10 ml-5 ml-xl-0 " id="banner-content">
                 <h3 class="font-weight-bold text-light">EXCEEDING EXPECTATIONS & GAINING TRUST</h3>
                 <h3 class="text-light font-weight-normal">THROUGH EXCEPTIONAL SERVICE & PERFORMANCE</h3>
                 <span class="text-light">
                     Leader in providing value-added Electrical services to our customers by creating a successful
-                    partnership throughout the design, and commissioning process.
+                    <p>partnership throughout the design, and commissioning process.</p>
                 </span>
             </div>
         </div>
     </div>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
     <!-- navbar -->
     <div class="container">
         <div class="row ">
             <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-top bg-transparent" id="nav">
-                <div class="col-4 col-md-4 col-lg-5 col-xl-4 p-0">
-                    <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 float-none float-lg-right " href="#">
-                        <img src="assets/images/Logo.svg" class="img-fluid" width="185px" alt="logo" />
+                <div class="col-4 col-md-4 col-lg-5 col-xl-4">
+                    <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 float-none float-lg-right" href="#">
+                        <img src="assets/images/Logo.svg" class="img-fluid" width="170px" alt="logo" />
                     </a>
                 </div>
                 <!-- toggle button -->
@@ -78,6 +92,150 @@
             </nav>
         </div>
     </div>
+    <!-- Layout 2 -->
+    <!-- Cards row-1 -->
+    <div class="container-fluid">
+        <div class="row justify-content-xl-center mt-xl-5 pt-xl-5 mb-xl-2">
+            <div class="col-xl-2">
+                <img src="./assets/images/Title_Our Services.svg" class="" alt="Our Services" width="110%"
+                    height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Fixes Wire.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Electrical Installation.svg" class="" alt="Our Services" width="110%"
+                    height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Emergency.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Fire Detection.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+        </div>
+    </div>
+    <!-- Cards row-2 -->
+    <div class="container-fluid">
+        <div class="row justify-content-xl-center mb-xl-5 pb-xl-5">
+            <div class="col-xl-2">
+                <img src="./assets/images/Access Control.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Ventilation.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Environmental.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/Solar Panel.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/EV.svg" class="" alt="Our Services" width="110%" height="110%">
+            </div>
+        </div>
+    </div>
+    <!-- layout 5 -->
+    <div class="container-fluid p-0">
+        <img src="./assets/images/Enquiry Form.png" class="img-resposive img-fluid" alt="banner" id="banner-2" />
+    </div>
+    <!-- Enquire form -->
+    <section class="section" id="banner-content-2">
+        <div class="container">
+            <!-- Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class=" text-center">
+                        <h3 class="font-weight-bold text-light">HOW CAN WE HELP?</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="row justify-content-xl-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="custom-form mt-4">
+                        <div id="message"></div>
+                        <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <label class="contact-lable text-light">First Name</label>
+                                        <input name="name" id="name" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <label class="contact-lable text-light">Last Name</label>
+                                        <input name="name" id="lastname" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <label class="contact-lable text-light">Telephone</label>
+                                        <input name="name" id="name" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-3">
+                                        <label class="contact-lable text-light">Email</label>
+                                        <input name="name" id="lastname" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-3">
+                                        <label class="contact-lable text-light">Message</label>
+                                        <textarea name="comments" id="comments" rows="5"
+                                            class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-12 mt-3 text-xl-center">
+                                    <input id="submit" name="send" class="submitBnt btn btn-primary btn-round"
+                                        value="Enquire Now" type="submit">
+                                    <div id="simple-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- layout 6 -->
+    <div class="container">
+        <div class="row justify-content-xl-center mt-xl-5">
+            <div>
+                <h4 class="font-weight-bold">OUR ACCREDITATIONS</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-xl-center mt-xl-4 mb-xl-5">
+            <div class="col-xl-2 mr-xl-5">
+                <img src="./assets/images/NICEIC-logo.svg" class="" alt="NICEIC-logo" width="170%" height="100%">
+            </div>
+            <div class="col-xl-2 ml-xl-5">
+                <img src="./assets/images/ECA-logo.svg" class="mt-xl-3 ml-xl-3" alt="NICEIC-logo" width="70%"
+                    height="70%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/HAS-logo.svg" class="mt-xl-3" alt="NICEIC-logo" width="70%" height="70%">
+            </div>
+            <div class="col-xl-2">
+                <img src="./assets/images/ConstructionLine-logo.svg" class="mt-xl-3" alt="NICEIC-logo" width="70%"
+                    height="70%">
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
