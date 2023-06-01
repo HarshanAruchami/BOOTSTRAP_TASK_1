@@ -119,8 +119,8 @@
 .double-quote-circle-small::before {
     content: '"';
     position: absolute;
-    top: -30px;
-    left: 10px;
+    top: 40px;
+    left: -10px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+
 }
 
 #testimonial {
@@ -138,8 +138,15 @@
 
 }
 
-#test_1{
+#test_1 {
     z-index: 1;
     margin-top: -280px;
     margin-left: 500px;
+}
+
+/* Move container to the left */
+.move-container-left {
+    margin-left: 9%;
+    margin-right: 18%;
+    /* Adjust this value to move the container */
 }
