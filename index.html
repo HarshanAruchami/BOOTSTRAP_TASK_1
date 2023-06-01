@@ -14,6 +14,7 @@
     <!-- Linking Script File -->
     <script type="js" src="./assets/js/index.js"></script>
     <!-- jquery cdns -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
@@ -50,14 +51,15 @@
     <!-- navbar -->
     <div class="container">
         <div class="row ">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-top bg-transparent" id="nav">
-                <div class="col-4 col-md-4 col-lg-5 col-xl-4">
+            <nav class="navbar navbar-expand-xl navbar-expand fixed-top navbar-fixed-top bg-transparent" id="nav">
+                <!-- Logo -->
+                <div class="col-2 col-xl-4">
                     <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 float-none float-lg-right" href="#">
                         <img src="assets/images/Logo.svg" class="img-fluid" width="170px" alt="logo" />
                     </a>
                 </div>
                 <!-- toggle button -->
-                <button class="navbar-toggler mr-3 col-md-1 text-dark bg-info" id="toggle-top" type="button"
+                <button class="navbar-toggler col-md-1 text-dark bg-info" id="toggle-top" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -82,7 +84,7 @@
                                 <a class="nav-link text-light" id="nav-font-size" href="#">ABOUT</a>
                             </li>
                             <!-- Navbar button -->
-                            <li class="nav-item ml-1">
+                            <li class="nav-item ml-xl-1">
                                 <button class="border-0 mt-2 text-light ps-3 pe-3 btn-info " id="nav-font-size"
                                     type="submit">
                                     ENQUIRE NOW
@@ -97,44 +99,71 @@
     <!-- Layout 2 -->
     <!-- Cards row-1 -->
     <div class="container-fluid">
-        <div class="row justify-content-xl-center mt-xl-5 pt-xl-5 mb-xl-2">
-            <div class="col-xl-2">
-                <img src="./assets/images/Title_Our Services.svg" class="" alt="Our Services" width="110%"
+        <div class="row justify-content-xl-center justify-content-center mt-5 mt-xl-5 pt-xl-5 pb-xl-4">
+            <a href="#" class="col-xl-2 col-6 pr-xl-0 nav-link ">
+                <img src="./assets/images/Title_Our Services.svg" class="img-content img-fluid" alt="Our Services"
+                    width="110%" height="110%">
+                <h4 class="txt-center text-light text-center"><b>OUR SERVICES</b></h4>
+            </a> 
+            <a href="#" class="col-xl-2 col-6 pr-xl-0 nav-link">
+                <img src="./assets/images/Fixes Wire.svg" class="img-content img-fluid" alt="Our Services" width="110%"
                     height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Fixes Wire.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Electrical Installation.svg" class="" alt="Our Services" width="110%"
+                <h4 class="txt-center text-light text-center  txt-size"><b><span>FIXED WIRE <p>TESTING EICR</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6 mt-5 pt-3  pr-xl-0 nav-link">
+                <img src="./assets/images/Electrical Installation.svg" class="img-content img-fluid" alt="Our Services"
+                    width="110%" height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>ELECTRICAL<p>INSTALLATION</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6 mt-5 pt-3  pr-xl-0 nav-link">
+                <img src="./assets/images/Emergency.svg" class="img-content img-fluid" alt="Our Services" width="110%"
                     height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Emergency.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Fire Detection.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6 mt-5 pt-3  pr-xl-0 nav-link">
+                <img src="./assets/images/Fire Detection.svg" class="img-content img-fluid" alt="Our Services"
+                    width="110%" height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
         </div>
     </div>
     <!-- Cards row-2 -->
-    <div class="container-fluid">
-        <div class="row justify-content-xl-center mb-xl-5 pb-xl-5">
-            <div class="col-xl-2">
-                <img src="./assets/images/Access Control.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Ventilation.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Environmental.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/Solar Panel.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
-            <div class="col-xl-2">
-                <img src="./assets/images/EV.svg" class="" alt="Our Services" width="110%" height="110%">
-            </div>
+    <div class="container-fluid card2">
+        <div class="row justify-content-xl-center pb-xl-5 my-xl-5">
+            <a href="#" class="col-xl-2 col-6 mt-5 pt-4 mt-xl-0 pt-xl-0 pr-xl-0 nav-link">
+                <img src="./assets/images/Access Control.svg" class="img-content img-fluid" alt="Our Services"
+                    width="110%" height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6 mt-5 pt-4 mt-xl-0 pt-xl-0 pr-xl-0 nav-link">
+                <img src="./assets/images/Ventilation.svg" class="img-content img-fluid" alt="Our Services" width="110%"
+                    height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6  mt-5 pt-4 mt-xl-0 pt-xl-0 pr-xl-0 nav-link">
+                <img src="./assets/images/Environmental.svg" class="img-content img-fluid" alt="Our Services"
+                    width="110%" height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6  mt-5 pt-4 mt-xl-0 pt-xl-0 pr-xl-0 nav-link">
+                <img src="./assets/images/Solar Panel.svg" class="img-content img-fluid" alt="Our Services" width="110%"
+                    height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
+            <a href="#" class="col-xl-2 col-6  mt-5 pt-4 mt-xl-0 pt-xl-0 pr-xl-0 nav-link">
+                <img src="./assets/images/EV.svg" class="img-content img-fluid" alt="Our Services" width="110%"
+                    height="110%">
+                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                        </span></b></h4>
+            </a>
         </div>
     </div>
     <!-- layout 3 -->
@@ -305,7 +334,7 @@
     </section>
     <!-- layout 6 -->
     <!-- Our Accreditations -->
-    <div class="container">
+    <div class="container pt-xl-5">
         <div class="row justify-content-xl-center mt-xl-5">
             <div>
                 <h4 class="font-weight-bold">OUR ACCREDITATIONS</h4>
@@ -333,13 +362,13 @@
     </div>
     <!-- layout 7 -->
     <div class="container-fluid p-0 crop-bg-image">
-        <img src="./assets/images/Testimonials_bg_img.png" class="img-resposive img-fluid" alt="Testimonials_bg_img"
-            id="banner-3" />
+        <img src="./assets/images/Testimonials_bg_img.png" id="testimonial-img" class="img-resposive img-fluid"
+            alt="Testimonials_bg_img" id="banner-3" />
     </div>
     <!-- Testimonials Content -->
-    <div class="container-fluid">
+    <div class="container-fluid testimonial-container">
         <div class="bg-dark move-container-left" id="testimonial">
-            <div class="row double-quote-circle">
+            <div class="row double-quote-circle bg-dark position-relative">
                 <div class="col-xl-4 mt-xl-5 pt-xl-2 mb-xl-5 pb-xl-5 text-light">
                     <h1 class="">TESTIMONIALS</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam delectus sunt esse et, qui
@@ -349,12 +378,12 @@
                 <div class="col-xl-5 text-dark double-quote-circle-small">
                     <div class="bg-light p-xl-3 mt-xl-4 pl-xl-3">
                         <p class="pt-xl-4 pl-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam
-                            dolor consectetur olor sit amet consectetur adipisicing elit.
+                            dolor consectetur olor sit amet consectetur.
                         </p>
                         <p class="pl-xl-3"><b>Name Here,Location Here</b></p>
                     </div>
                 </div>
-                <div class="col-xl-5 text-dark double-quote-circle-small">
+                <div class="col-xl-5 text-dark double-quote-circle-small position-absolute" id="testimonial-2-card">
                     <div class="bg-light p-xl-3 mt-xl-4 pl-xl-3">
                         <p class="pt-xl-4 pl-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam
                             dolor consectetur olor sit amet consectetur adipisicing elit.
@@ -365,16 +394,128 @@
             </div>
         </div>
     </div>
-    <!-- dummy 1 -->
-    <div class="container-fluid">
-        <div class="row">
-
+    <!-- layout 8 -->
+    <div class="container-fluid pb-xl-5 pt-xl-5 mt-xl-5">
+        <div class="row  mt-xl-5 pt-xl-5 mb-xl-2 ">
+            <div class="col-xl-12 d-xl-flex justify-content-xl-center">
+                <div class="" style="width: 14rem;">
+                    <img class="img-content pr-xl-5" src="./assets/images/Title_Blog.svg" height="190px" alt="SolarPanel">
+                    <h4 class="txt-center-2 text-light text-center"><b><span>LATEST FROM<p>OUR BLOG</p>
+                    </span></b></h4>
+                </div>
+                <div class="card ml-xl-3" style="width: 18rem;">
+                    <img class="" src="./assets/images/Blog_card_1_img.svg" alt="Solar-Panel">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="border-0 p-xl-1 px-xl-3 mt-2 text-light btn-info " id="nav-font-size"
+                            type="submit">
+                            READ MORE
+                        </button>
+                    </div>
+                </div>
+                <div class="card ml-xl-3" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/images/Blog_card_2_img.svg" alt="Car-Petrol">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <button class="border-0 p-xl-1 px-xl-3 mt-2 text-light btn-info " id="nav-font-size"
+                            type="submit">
+                            READ MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- layout 9 -->
+    <!-- footer -->
+    <div class="container-fluid mt-xl-5 pt-xl-5 bg-dark">
+        <div class=" bg-dark text-light mx-5">
+            <div class="row justify-content-xl-center pt-xl-5 pb-xl-5">
+                <!-- Logo column -->
+                <div class="col-md-4 col-sm-4 col-xl-3 ml-xl-5">
+                    <div class="footer-text pull-left font-weight-light">
+                        <div class="d-flex">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/Logo.svg" class="img-fluid" width="190px" alt="logo" />
+                            </a>
+                        </div>
+                        <p><i class="fa-sharp fa-solid fa-square-phone text-light mt-xl-5"></i> 0333 1124 007</p>
+                        <p><i class="fa-regular fa-envelope text-light"></i> info@ashley-james.co.uk</p>
+                        <p><i class="fa-regular fa-envelope text-info"></i> CLIENT PORTAL <i
+                                class="fa-regular fa-envelope text-info ml-xl-4"></i> CLIENT PORTAL</p>
+                        <div class="social mt-2 mb-3"> <i class="fa fa-facebook-official fa-lg"></i></div>
+                        <div class="d-xl-flex" style="font-size:10px;">
+                            <div class="col-md-6 col-sm-6 col-xl-5 p-xl-0 ">
+                                <div class="">
+                                    <span><i class="fa fa-copyright"></i> 2020 thezpdesign
+                                        <p><i class="fa fa-copyright"></i> 2020 thezpdesign</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xl-8">
+                                <div class="pull-right mr-4 d-flex policy">
+                                    <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Services -->
+                <div class="col-md-2 col-sm-2 col-xl-2">
+                    <h5 class="heading">OUR SERVICES</h5>
+                    <ul class="list-unstyled">
+                        <li>IT Consulting</li>
+                        <li>Development</li>
+                        <li>Cloud</li>
+                        <li>IT Consulting</li>
+                        <li>Development</li>
+                        <li>Cloud</li>
+                        <li>IT Consulting</li>
+                        <li>Development</li>
+                        <li>Cloud</li>
 
-
-
-
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xl-2">
+                    <h5 class="heading">Industries</h5>
+                    <ul class="card-text list-unstyled">
+                        <li>Finance</li>
+                        <li>Public Sector</li>
+                        <li>Smart Office</li>
+                        <li>Retail</li>
+                    </ul>
+                    <h5 class="heading">Industries</h5>
+                    <ul class="card-text list-unstyled">
+                        <li>Finance</li>
+                        <li>Public Sector</li>
+                        <li>Smart Office</li>
+                        <li>Retail</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xl-2">
+                    <h5 class="heading">Company</h5>
+                    <ul class="card-text list-unstyled">
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>Join Us</li>
+                        <li>About Us</li>
+                    </ul>
+                    <h5 class="heading">Industries</h5>
+                    <ul class="card-text list-unstyled">
+                        <li>Finance</li>
+                        <li>Public Sector</li>
+                        <li>Smart Office</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

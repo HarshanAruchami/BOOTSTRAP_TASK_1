@@ -19,6 +19,20 @@
     background-color: #464646 !important;
     transition: background-color 200ms linear;
 }
+/* layout 2 Css */
+.card2{
+    margin-top: -10px;
+}
+.img-content{
+    z-index: 0;
+}
+.txt-center{
+    z-index: 1;
+    margin-top: -110px;
+}
+.txt-size{
+    font-size: small;
+}
 
 /* layout 3 Css */
 .map-txt {
@@ -76,13 +90,13 @@
 
 /* croped the background image */
 .crop-bg-image {
-    overflow: hidden;
+    overflow:visible;
 }
 
 .crop-bg-image img {
     object-fit: cover;
     object-position: bottom;
-    width: 100%;
+    width: 100vw;
     height: 667px;
     /* Adjust this value to control the cropped height */
 }
@@ -132,7 +146,9 @@
     align-items: center;
 
 }
-
+#testimonial-2-card{
+    margin-left: 700px;
+}
 #testimonial {
     z-index: 0;
 
@@ -143,10 +159,26 @@
     margin-top: -280px;
     margin-left: 500px;
 }
+/* z-index for the image */
+#testimonial-img {
+    z-index: 0;
+    background-image: url(../images/Testimonials_bg_img.png);
+    background-size:100%;
+    background-repeat: no-repeat;
 
+}
+.testimonial-container{
+    z-index: 1;
+    margin-top: -520px;
+}
 /* Move container to the left */
 .move-container-left {
     margin-left: 9%;
     margin-right: 18%;
     /* Adjust this value to move the container */
+}
+/* layout 8 */
+.txt-center-2{
+    z-index: 1;
+    margin-top: -120px;
 }
