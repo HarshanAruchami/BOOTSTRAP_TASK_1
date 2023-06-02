@@ -13,14 +13,10 @@
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <!-- Linking Script File -->
     <script type="js" src="./assets/js/index.js"></script>
-    <!-- jquery cdns -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- jquery scroll cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
     <!-- google font fira sans bold 700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,6 +41,7 @@
             </div>
         </div>
     </div>
+    <!-- scroll balck navbar -->
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -56,17 +53,20 @@
     <!-- navbar -->
     <div class="container">
         <div class="row ">
-            <nav class="navbar navbar-expand-lg  fixed-top navbar-fixed-top navigation-in  bg-transparent justify-content-xl-center" id="navigation">
+            <nav class="navbar navbar-expand-lg  fixed-top navbar-fixed-top navigation-in  bg-transparent justify-content-xl-center"
+                id="nav">
                 <!-- Logo -->
-                <div class="col-2">
-                    <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 float-none float-lg-right" href="#">
-                        <img src="assets/images/Logo.svg" class="img-fluid" width="100%" alt="logo" />
+                <div class="col-4 col-xl-3">
+                    <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 mr-xl-5 float-none float-lg-right float-xl-right"
+                        href="#">
+                        <img src="assets/images/Logo.svg" class="img-fluid" id="logo-size" width="100%" alt="logo" />
                     </a>
                 </div>
                 <!-- Toggle button -->
-                <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-info mr-5" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation" id="toggle-size">
+                    <i class="fa fa-bars"></i>
                 </button>
                 <!-- Navbar clickables -->
                 <div class="col-xl-6 p-0" id="nav-bar-cont">
@@ -113,25 +113,28 @@
             <a href="#" class="col-xl-2 col-6 mt-5 pt-3 pr-xl-0 nav-link">
                 <img src="./assets/images/Fixes Wire.svg" class="img-content img-fluid" alt="Our Services" width="110%"
                     height="110%">
-                <h4 class="txt-center text-light text-center txt-size ft-size"><b><span class="fnt-size">FIXED WIRE <p>TESTING EICR</p>
+                <h4 class="txt-center text-light text-center"><b><span class="txt-size">FIXED WIRE<p>TESTING EICR</p>
                         </span></b></h4>
             </a>
             <a href="#" class="col-xl-2 col-6 mt-5 pt-3  pr-xl-0 nav-link">
                 <img src="./assets/images/Electrical Installation.svg" class="img-content img-fluid" alt="Our Services"
                     width="110%" height="110%">
-                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>ELECTRICAL<p>INSTALLATION</p>
+                <h4 class="txt-center text-light text-center ml-xl-2 "><b><span class="txt-size">ELECTRICAL<p>
+                                INSTALLATION</p>
                         </span></b></h4>
             </a>
             <a href="#" class="col-xl-2 col-6 mt-5 pt-3  pr-xl-0 nav-link">
                 <img src="./assets/images/Emergency.svg" class="img-content img-fluid" alt="Our Services" width="110%"
                     height="110%">
-                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                <h4 class="txt-center text-light text-center ml-xl-2 "><b><span class="txt-size">EMERGENCY<p>LIGHTING
+                            </p>
                         </span></b></h4>
             </a>
             <a href="#" class="col-xl-2 col-6 mt-5 pt-3  pr-xl-0 nav-link">
                 <img src="./assets/images/Fire Detection.svg" class="img-content img-fluid" alt="Our Services"
                     width="110%" height="110%">
-                <h4 class="txt-center text-light text-center ml-xl-2 txt-size"><b><span>EMERGENCY<p>LIGHTING</p>
+                <h4 class="txt-center text-light text-center ml-xl-2 "><b><span class="txt-size">EMERGENCY<p>LIGHTING
+                            </p>
                         </span></b></h4>
             </a>
         </div>
@@ -174,7 +177,7 @@
     <!-- layout 3 -->
     <!-- Map -->
     <h1 class="text-center text-info mt-5 bg-dark d-xl-none"><b>NATIONWIDE COVERAGE</b></h1>
-    <div class="container-fluid bg-dark mt-5 mt-xl-0">
+    <div class="container-fluid bg-dark mt-5 mt-xl-0 para">
         <div class="row ">
             <div class="col-xl-5 col-12 text-center">
                 <img src="./assets/images/Map Image.svg" class="float-xl-right mr-xl-3" alt="Map" height="400px">
@@ -275,7 +278,7 @@
                     <div class="card-body text-xl-center text-center">
                         <img src="./assets/images/Calendar Icon.svg" width="65px" class="mt-xl-4" alt="Calendar-Icon">
                         <h1 class="card-title mt-xl-4 display-1 font-weight-bold">20</h1>
-                        <p><b>Years of Trading</b></p>
+                        <p class="subpara"><b>Years of Trading</b></p>
                         <div class="crop-image">
                             <img src="./assets/images/Calendar bg-Icon.svg" alt="Image">
                         </div>
@@ -288,7 +291,7 @@
                         <img src="./assets/images/Certificate Icon.svg" width="65px" class="mt-xl-4"
                             alt="Calendar-Icon">
                         <h1 class="card-title mt-xl-3 display-1 font-weight-bold">60</h1>
-                        <p><b>Years of Trading</b></p>
+                        <p class="subpara"><b>Years of Trading</b></p>
                         <div class="crop-image">
                             <img src="./assets/images/Certificate bg-Icon.svg" alt="Image">
                         </div>
@@ -300,7 +303,7 @@
                     <div class="card-body text-xl-center text-center">
                         <img src="./assets/images/Tick Icon.svg" width="65px" class="mt-xl-4" alt="Calendar-Icon">
                         <h1 class="card-title mt-xl-4 display-1 font-weight-bold">100</h1>
-                        <p><b>Years of Trading</b></p>
+                        <p class="subpara"><b>Years of Trading</b></p>
                         <div class="crop-image">
                             <img src="./assets/images/Tick  bg-Icon.svg" alt="Image">
                         </div>
@@ -365,9 +368,11 @@
                                 </div>
                             </div>
                             <div class="row ">
-                                <div class="col-lg-12 mt-3 text-xl-center">
-                                    <input id="submit" name="send" class="submitBnt btn btn-primary btn-round"
-                                        value="Enquire Now" type="submit">
+                                <div class="col-xl-12 mt-3 text-xl-center">
+                                    <button class="border-0 mt-2 text-light  p-lg-2 px-xl-2 btn-info" id="nav-font-size"
+                                        type="submit">
+                                        ENQUIRE NOW
+                                    </button>
                                     <div id="simple-msg"></div>
                                 </div>
                             </div>
@@ -416,31 +421,33 @@
             alt="Testimonials_bg_img" id="banner-3" />
     </div>
     <!-- Testimonials Content -->
-    <div class="container-fluid testimonial-container mb-5 pb-5">
+    <div class="container-fluid testimonial-container pb-5">
         <div class="bg-dark move-container-left" id="testimonial">
             <div
                 class="row ml-5 ml-xl-0 mb-5 justify-content-xl-start justify-content-center double-quote-circle bg-dark position-relative">
                 <div class="col-xl-4 mt-xl-5 pt-xl-2 mb-xl-5 pb-xl-5 text-light">
                     <h3 class="font-bold">TESTIMONIALS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam delectus sunt esse et, qui
+                    <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam delectus sunt
+                        esse et, qui
                         quam corporis ducimus! Lorem ipsum dolor consectetur.
                     </p>
                 </div>
                 <!-- testimoni 1 -->
                 <div class="col-xl-5 text-dark double-quote-circle-small">
                     <div class="bg-light p-xl-3 mt-xl-4 pl-xl-3">
-                        <p class="pt-xl-4 pl-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam
+                        <p class="pt-xl-4 pt-4 pl-4 pl-xl-3 subpara">Lorem ipsum dolor sit amet consectetur adipisicing
                             dolor consectetur olor sit amet consectetur.
                         </p>
-                        <p class="pl-xl-3"><b>Name Here,Location Here</b></p>
+                        <p class="pl-xl-3 pl-4 pb-3 pb-xl-0 subpara"><b>Name Here,Location Here</b></p>
                     </div>
                 </div>
                 <!-- testimoni 2 -->
                 <div class="col-xl-5  d-none d-xl-block text-dark double-quote-circle-small position-absolute"
                     id="testimonial-2-card">
-                    <div class="bg-light p-xl-3 mt-xl-4 pl-xl-3">
-                        <p class="pt-xl-4 pl-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nam
-                            dolor consectetur olor sit amet consectetur adipisicing elit.
+                    <div class="bg-light p-xl-3 mt-xl-4 pl-xl-3 subpara">
+                        <p class="pt-xl-4 pl-xl-3 subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                            nam
+                            dolor consectetur.
                         </p>
                         <p class="pl-xl-3"><b>Name Here,Location Here</b></p>
                     </div>
@@ -450,8 +457,8 @@
     </div>
     <!-- layout 8-->
     <!-- cards-->
-    <h1 class="text-center text-info bg-dark d-xl-none mt-5"><b>LATEST FROM OUR BLOG</b></h1>
-    <div class="container mt-5 mt-xl-0 pt-xl-5">
+    <h1 class="text-center text-info bg-dark d-xl-none"><b>LATEST FROM OUR BLOG</b></h1>
+    <div class="container mt-4 mt-xl-0 pt-xl-4 pb-xl-5 mb-xl-5">
         <div class="row justify-content-xl-center mt-xl-5">
             <!--card1-->
             <a href="#"
@@ -464,12 +471,12 @@
                 </div>
             </a>
             <!--card2-->
-            <a href="#" class="ml-auto ml-xl-0 mr-5 mr-xl-0 mt-xl-5 pt-xl-5 pl-xl-0 col-8 col-xl-3 nav-link text-dark">
+            <div class="ml-auto ml-xl-0 mr-5 mr-xl-0 mt-xl-5 pt-xl-5 pl-xl-0 col-8 col-xl-3 text-dark">
                 <div class="card" style="width: 18rem;">
                     <img class="img-fluid img-content" src="assets/images/Blog_card_1_img.svg" alt="deal-img-2"
                         id="Blog_Img">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                    <div class="card-body text-center text-xl-left">
+                        <h5 class="card-title para">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -479,13 +486,13 @@
                         </button>
                     </div>
                 </div>
-            </a>
+            </div>
             <!--card3-->
-            <a href="#" class="ml-auto ml-xl-3 mr-5 mr-xl-0 mt-xl-5 pt-xl-5 pl-xl-0 col-8 col-xl-3 nav-link text-dark">
+            <div class="ml-auto ml-xl-3 mr-5 mr-xl-0 mt-xl-5 pt-xl-5 pl-xl-0 col-8 col-xl-3 text-dark ">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="./assets/images/Blog_card_2_img.svg" alt="Car-Petrol">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                    <div class="card-body text-center text-xl-left">
+                        <h5 class="card-title para">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -495,16 +502,16 @@
                         </button>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-    </a>
     <!-- layout 9 -->
     <!-- zoom reference -->
     <!-- footer -->
     <footer class="bg-dark text-light">
         <div class=" container pt-xl-5 pb-xl-5" id="margin">
-            <div class="row justify-content-end justify-content-xl-end pt-3 pb-3 pb-xl-4 mr-xl-5 ml-5 ml-xl-0">
-                <div class="col-5 col-lg-4 col-xl-4 mt-md-4 mt-lg-4">
+            <div class="row justify-content-center justify-content-xl-end pt-3 pb-3 pb-xl-4 mr-xl-5 ml-5 ml-xl-0">
+                <div class="col-5 col-lg-4 col-xl-4 mt-md-4 mt-lg-4 para">
                     <img src="./assets/images/Logo.svg" alt="LOGO">
                     <p><i class="fa-sharp fa-solid fa-square-phone text-light mt-xl-5"></i> 0333 1124 007</p>
                     <p><i class="fa-regular fa-envelope text-light"></i> info@ashley-james.co.uk</p>
@@ -527,9 +534,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-2 col-xl-2 mt-xl-4 mt-4 ml-5 ml-xl-0" id="#">
-                    <h6 class="">OUR SERVICES</h6>
-                    <ul class="list-unstyled fnt-size">
+                <div class="col-5 col-lg-2 col-xl-2 mt-xl-4 mt-4 ml-5 ml-xl-0 " id="#">
+                    <h6 class="para">OUR SERVICES</h6>
+                    <ul class="list-unstyled fnt-size para">
                         <li>IT Consulting</li>
                         <li>Development</li>
                         <li>Cloud</li>
@@ -542,15 +549,15 @@
                     </ul>
                 </div>
                 <div class="col-5 col-lg-2 col-xl-2 mt-xl-4 mt-2">
-                    <h6 class="text-left">INDUSTRIES</h6>
-                    <ul class="list-unstyled fnt-size">
+                    <h6 class="text-left para">INDUSTRIES</h6>
+                    <ul class="list-unstyled fnt-size para">
                         <li>Finance</li>
                         <li>Public Sector</li>
                         <li>Smart Office</li>
                         <li>Retail</li>
                     </ul>
-                    <h6 class="mt-md-4 mt-lg-4">INDUSTRIES</h6>
-                    <ul class="list-unstyled fnt-size">
+                    <h6 class="mt-md-4 mt-lg-4 para">INDUSTRIES</h6>
+                    <ul class="list-unstyled fnt-size para">
                         <li>Finance</li>
                         <li>Public Sector</li>
                         <li>Smart Office</li>
@@ -560,15 +567,15 @@
                 </div>
                 <!-- footer form -->
                 <div class="col-5 col-lg-2 col-xl-2 mt-2  mt-xl-4 ml-5 ml-xl-0">
-                    <h6 class="">INDUSTRIES</h6>
-                    <ul class="card-text list-unstyled fnt-size">
+                    <h6 class="para">INDUSTRIES</h6>
+                    <ul class="card-text list-unstyled fnt-size para">
                         <li>Finance</li>
                         <li>Public Sector</li>
                         <li>Smart Office</li>
                         <li>Retail</li>
                     </ul>
-                    <h6 class="mt-4">INDUSTRIES</h6>
-                    <ul class="list-unstyled fnt-size">
+                    <h6 class="mt-4 para">INDUSTRIES</h6>
+                    <ul class="list-unstyled fnt-size para">
                         <li>Finance</li>
                         <li>Public Sector</li>
                         <li>Smart Office</li>
@@ -579,5 +586,11 @@
         </div>
     </footer>
 </body>
+<!-- jquery cdns -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<!-- fontawsome link -->
+<script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
 
 </html>

@@ -45,7 +45,7 @@
 }
 
 .txt-size {
-    font-size: small;
+    font-size: 100%;
 }
 
 /* layout 3 Css */
@@ -98,8 +98,6 @@
     padding: 100px;
     border-radius: 5px;
 }
-
-
 
 /* layout 7 */
 #banner-3 {
@@ -217,9 +215,92 @@
 }
 
 /* Media query for font size in mobile view */
-@media screen and (max-width: 768px) {
-    .txt-size {
-      font-size: 18px;
-      color: blue;
+@media screen and (min-width: 300px) {
+    #logo-size{
+        width: 700px;
     }
-  }
+    #toggle-size{
+        width: 60px;
+        height: 50px;
+    }
+    .txt-size {
+        font-size: 27px;
+    }
+
+    .para {
+        font-size: 30px;
+    }
+
+    .subpara {
+        font-size: 23px;
+    }
+
+    .double-quote-circle-small {
+        position: relative;
+        padding: 40px;
+    }
+    .testimonial-container {
+        z-index: 1;
+        margin-top: -600px;
+    }
+    .double-quote-circle-small::before {
+        content: '\f10d';
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgb(25, 148, 197);
+        color: rgb(255, 255, 255);
+        font-family: "Font Awesome";
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+/* for large screen */
+@media screen and (min-width: 1024px) {
+    .txt-size {
+        font-size: small;
+    }
+    .txt-size {
+        font-size: small;
+    }
+
+    .para {
+        font-size:medium;
+    }
+
+    .subpara {
+        font-size: small;
+    }
+    .testimonial-container {
+        z-index: 1;
+        margin-top: -500px;
+    }
+    .double-quote-circle-small {
+        position: relative;
+        padding: 40px;
+    }
+
+    .double-quote-circle-small::before {
+        content: '\f10d';
+        position: absolute;
+        top: 40px;
+        left: -10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgb(25, 148, 197);
+        color: rgb(255, 255, 255);
+        font-family: "Font Awesome";
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
