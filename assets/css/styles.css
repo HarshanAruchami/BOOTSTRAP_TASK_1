@@ -19,18 +19,22 @@
     background-color: #464646 !important;
     transition: background-color 200ms linear;
 }
+
 /* layout 2 Css */
-.card2{
+.card2 {
     margin-top: -10px;
 }
-.img-content{
+
+.img-content {
     z-index: 0;
 }
-.txt-center{
+
+.txt-center {
     z-index: 1;
     margin-top: -110px;
 }
-.txt-size{
+
+.txt-size {
     font-size: small;
 }
 
@@ -40,9 +44,10 @@
 }
 
 /* layout 4 Css */
-.vector-cards{
+.vector-cards {
     margin-right: 205px;
 }
+
 .card-border-size {
     width: 270px;
     height: 330px;
@@ -76,15 +81,15 @@
 }
 
 /* layout 5 Css */
-#banner-2 {
-    width: 100vw;
-    z-index: 0;
+.click-here {
+    background-image: url('/assets/images/Enquiry\ Form.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    border-radius: 5px;
 }
 
-#banner-content-2 {
-    z-index: 1;
-    margin-top: -550px;
-}
+
 
 /* layout 7 */
 #banner-3 {
@@ -93,7 +98,7 @@
 
 /* croped the background image */
 .crop-bg-image {
-    overflow:visible;
+    overflow: visible;
 }
 
 .crop-bg-image img {
@@ -121,6 +126,7 @@
     background-color: rgb(25, 148, 197);
     color: rgb(255, 255, 255);
     font-size: 100px;
+    font-family: 'fira sans';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,15 +149,18 @@
     border-radius: 50%;
     background-color: rgb(25, 148, 197);
     color: rgb(255, 255, 255);
+    font-family: fira sans;
     font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-#testimonial-2-card{
-    margin-left: 700px;
+
+#testimonial-2-card {
+    margin-left: 730px;
 }
+
 #testimonial {
     z-index: 0;
 
@@ -162,32 +171,37 @@
     margin-top: -280px;
     margin-left: 500px;
 }
+
 /* z-index for the image */
 #testimonial-img {
     z-index: 0;
     background-image: url(../images/Testimonials_bg_img.png);
-    background-size:100%;
+    background-size: 100%;
     background-repeat: no-repeat;
 
 }
-.testimonial-container{
+
+.testimonial-container {
     z-index: 1;
     margin-top: -520px;
 }
+
 /* Move container to the left */
 .move-container-left {
     margin-left: 9%;
     margin-right: 18%;
     /* Adjust this value to move the container */
 }
+
 /* layout 8 */
-.txt-center-2{
+.txt-center-2 {
     z-index: 1;
     margin-top: -120px;
 }
+
 /* layout 9 */
 /* footer  */
-.fnt-size{
-    font-size: small;
+.fnt-size {
+    font-size: medium;
 
 }
