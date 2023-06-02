@@ -56,23 +56,26 @@
     <!-- navbar -->
     <div class="container">
         <div class="row ">
-            <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand fixed-top navbar-fixed-top bg-transparent"
-                id="nav">
+            <nav class="navbar navbar-expand-lg fixed-top bg-transparent" id="nav">
                 <!-- Logo -->
-                <div class="col-2 col-xl-4">
+                <div class="col-2">
                     <a class="navbar-brand ml-1 ml-md-3 mr-lg-5 float-none float-lg-right" href="#">
                         <img src="assets/images/Logo.svg" class="img-fluid" width="170px" alt="logo" />
                     </a>
                 </div>
-                <!-- toggle button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown " aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- demo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 <!-- Navbar clickables -->
-                <div class="col-7 p-0" id="nav-bar-cont">
-                    <div class="collapse navbar-collapse ml-5 ml-xl-0  float-xl-left" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mr-5">
+                <div class="col-10 p-0" id="nav-bar-cont">
+                    <div class="collapse navbar-collapse float-lg-right" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link text-light" id="nav-font-size" href="#">HOME</a>
                             </li>
@@ -89,8 +92,8 @@
                                 <a class="nav-link text-light" id="nav-font-size" href="#">ABOUT</a>
                             </li>
                             <!-- Navbar button -->
-                            <li class="nav-item ml-xl-1">
-                                <button class="border-0 mt-2 text-light ps-3 pe-3 btn-info " id="nav-font-size"
+                            <li class="nav-item">
+                                <button class="border-0 mt-2 text-light ps-3 pe-3 btn-info" id="nav-font-size"
                                     type="submit">
                                     ENQUIRE NOW
                                 </button>

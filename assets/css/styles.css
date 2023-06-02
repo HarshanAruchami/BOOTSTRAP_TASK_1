@@ -217,10 +217,9 @@
 }
 
 /* Media query for font size in mobile view */
-@media(min-width:320px) and (max-width:375px) {
-    .ft-size {
-        
-    
+@media screen and (max-width: 500px) {
+    #abc  {
+        font-size: larger;
     }
 
   
