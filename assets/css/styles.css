@@ -1,3 +1,13 @@
+/* Fonts */
+@font-face {
+    font-family: "fira sans";
+    src: url(/assets/font/FiraSans-Bold.ttf);
+}
+
+.font-bold {
+    font-family: 'fira sans', sans-serif;
+}
+
 /* Banner Css */
 /* layout 1 */
 #banner {
@@ -116,7 +126,7 @@
 }
 
 .double-quote-circle::before {
-    content: '"';
+    content: "\f10d";
     position: absolute;
     top: -60px;
     left: 1px;
@@ -126,7 +136,7 @@
     background-color: rgb(25, 148, 197);
     color: rgb(255, 255, 255);
     font-size: 100px;
-    font-family: 'fira sans';
+    font-family: 'Font Awesome';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +150,7 @@
 }
 
 .double-quote-circle-small::before {
-    content: '"';
+    content: '\f10d';
     position: absolute;
     top: 40px;
     left: -10px;
@@ -149,7 +159,7 @@
     border-radius: 50%;
     background-color: rgb(25, 148, 197);
     color: rgb(255, 255, 255);
-    font-family: fira sans;
+    font-family: "Font Awesome";
     font-size: 100px;
     display: flex;
     justify-content: center;
@@ -204,4 +214,14 @@
 .fnt-size {
     font-size: medium;
 
+}
+
+/* Media query for font size in mobile view */
+@media(min-width:320px) and (max-width:375px) {
+    .ft-size {
+        
+    
+    }
+
+  
 }
