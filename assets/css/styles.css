@@ -92,7 +92,7 @@
 
 /* layout 5 Css */
 .click-here {
-    background-image: url('/assets/images/Enquiry\ Form.png');
+    background-image: url('../images/Enquiry\ Form.png');
     background-size: cover;
     background-position: center;
     padding: 100px;
