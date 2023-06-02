@@ -217,10 +217,9 @@
 }
 
 /* Media query for font size in mobile view */
-@media screen and (max-width: 500px) {
-    #abc  {
-        font-size: larger;
+@media screen and (max-width: 768px) {
+    .txt-size {
+      font-size: 18px;
+      color: blue;
     }
-
-  
-}
+  }
