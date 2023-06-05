@@ -249,9 +249,14 @@
 }
 
 /* layout 8 */
+#blog{
+    z-index: 0;
+}
 .txt-center-2 {
     z-index: 1;
-    margin-top: -120px;
+    margin-left: -210px;
+    margin-top: 80px;
+    
 }
 
 /* layout 9 */
@@ -319,10 +324,7 @@
 
     }
 
-    #niclogo {
-        /* margin-left: -100px; */
-        margin-right: 170px;
-    }
+    
 }
 
 /* for large screen */
