@@ -17,7 +17,7 @@
 
 #banner-content {
     z-index: 1;
-    margin-top: -220px;
+    margin-top: -270px;
 }
 
 #nav-font-size {
@@ -64,7 +64,7 @@
 }
 
 .card-border-size {
-    width: 270px;
+    width: 255px;
     height: 330px;
 }
 
@@ -263,6 +263,11 @@
 
 /* Media query for font size in mobile view */
 @media screen and (min-width: 300px) {
+    #banner-content {
+        z-index: 1;
+        margin-top: -200px;
+    }
+
     #logo-size {
         width: 700px;
         margin-left: 130px;
@@ -313,10 +318,20 @@
         align-items: center;
 
     }
+
+    #niclogo {
+        /* margin-left: -100px; */
+        margin-right: 170px;
+    }
 }
 
 /* for large screen */
 @media screen and (min-width: 1024px) {
+    #banner-content {
+        z-index: 1;
+        margin-top: -280px;
+    }
+
     #logo-size {
         width: 200px;
         margin-left: 0px;
