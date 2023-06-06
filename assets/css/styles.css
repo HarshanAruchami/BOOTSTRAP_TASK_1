@@ -244,7 +244,7 @@
         font-size: 3rem !important;
         color: #ffffff;
         position: absolute;
-        background-color:#24ABE2;
+        background-color: #24ABE2;
         padding: 30px;
         border-radius: 100px;
         margin-top: -340px;
@@ -266,11 +266,7 @@
     }
 
     .txt-size {
-        font-size: small;
-    }
-
-    .txt-size {
-        font-size: small;
+        font-size: medium;
     }
 
     .para {
@@ -285,6 +281,7 @@
         z-index: 1;
         margin-top: -500px;
     }
+
     #swiper-container {
         width: 60%;
         height: 20%;
@@ -294,6 +291,7 @@
         margin-bottom: 250px;
         z-index: 0;
     }
+
     #icon-quotes {
         font-size: 3rem !important;
         color: #ffffff;
@@ -304,7 +302,7 @@
         margin-top: -410px;
         margin-left: 150px;
     }
-    
+
 
 
 }
