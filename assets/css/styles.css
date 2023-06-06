@@ -225,14 +225,30 @@
         font-size: 23px;
     }
 
-    .double-quote-circle-small {
-        position: relative;
-        padding: 40px;
-    }
-
     .testimonial-container {
         z-index: 1;
         margin-top: -600px;
+    }
+
+    #swiper-container {
+        width: 70%;
+        height: 15%;
+        padding-bottom: 110px;
+        margin-top: -80px;
+        margin-left: 124px;
+        margin-bottom: 250px;
+        z-index: 0;
+    }
+
+    #icon-quotes {
+        font-size: 3rem !important;
+        color: #ffffff;
+        position: absolute;
+        background-color:#24ABE2;
+        padding: 30px;
+        border-radius: 100px;
+        margin-top: -340px;
+        margin-left: 150px;
     }
 
 }
@@ -269,32 +285,31 @@
         z-index: 1;
         margin-top: -500px;
     }
-
-    .double-quote-circle-small {
-        position: relative;
-        padding: 40px;
+    #swiper-container {
+        width: 60%;
+        height: 20%;
+        padding-bottom: 110px;
+        margin-top: -300px;
+        margin-left: 480px;
+        margin-bottom: 250px;
+        z-index: 0;
     }
-
-    .double-quote-circle-small::before {
-        content: '\f10d';
+    #icon-quotes {
+        font-size: 3rem !important;
+        color: #ffffff;
         position: absolute;
-        top: 40px;
-        left: -10px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: rgb(25, 148, 197);
-        color: rgb(255, 255, 255);
-        font-family: "Font Awesome";
-        font-size: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        background-color: #24ABE2;
+        padding: 30px;
+        border-radius: 100px;
+        margin-top: -410px;
+        margin-left: 150px;
     }
+    
+
+
 }
 
-/* testimonial sliders*/
+/* ICONS QUOTES*/
 .icon-quotes {
     font-size: 3rem !important;
     color: #ffffff;
@@ -302,12 +317,12 @@
     background-color: #24ABE2;
     padding: 30px;
     border-radius: 100px;
-    margin-top: -440px;
+    margin-top: -380px;
     margin-left: 150px;
 }
 
 .slide i {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ffffff;
     position: absolute;
     background-color: #24ABE2;
@@ -341,7 +356,7 @@ swiper-container {
     width: 60%;
     height: 30%;
     padding-bottom: 110px;
-    margin-top: -340px;
+    margin-top: -300px;
     margin-left: 480px;
     margin-bottom: 250px;
     z-index: 0;
